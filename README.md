@@ -1,111 +1,77 @@
-🚢 Titanic Survival Prediction – End-to-End Machine Learning Pipeline
-📌 Project Overview
+# 🚢 Titanic Survival Prediction – End-to-End Machine Learning Pipeline
+## 📌 Project Overview
 
 This project implements a complete machine learning pipeline to predict passenger survival using the Titanic dataset.
 
 The pipeline covers:
-
-Data Cleaning & Missing Value Handling
-
-Feature Engineering
-
-Exploratory Data Analysis (EDA)
-
-One-Hot Encoding
-
-Train-Test Splitting
-
-Model Training (Random Forest)
-
-Performance Evaluation
-
-Visualization
-
+- **Data Cleaning & Missing Value Handling**
+- **Feature Engineering**
+- **Exploratory Data Analysis (EDA)**
+- **One-Hot Encoding**
+- **Train-Test Splitting**
+- **Model Training (Random Forest)**
+- **Performance Evaluation**
+- **Visualization**
 
 The goal was to build a modular, production-style ML project structure, not just a notebook experiment.
 
-📊 Dataset
+## 📊 Dataset
 
-Dataset: Titanic dataset (Kaggle)
+**Dataset:** Titanic dataset (Kaggle)
 
-Key features used:
+### Key features used:
+- **Pclass** – Passenger Class
+- **Sex** – Gender
+- **Age** – Passenger Age
+- **Fare** – Ticket Fare
+- **Embarked** – Port of Embarkation
 
-Pclass – Passenger Class
+### Target variable:
+- **Survived** (0 = No, 1 = Yes)
 
-Sex – Gender
+## 🛠️ Tech Stack
 
-Age – Passenger Age
+- **Python**
+- **Pandas**
+- **NumPy**
+- **Matplotlib**
+- **Scikit-Learn**
 
-Fare – Ticket Fare
+## 🤖 Model
 
-Embarked – Port of Embarkation
+**Random Forest Classifier**
 
+### Why Random Forest?
+- Handles non-linear relationships well
+- Robust to outliers
+- Less sensitive to multicollinearity
+- Provides feature importance
 
-Target variable:
+## 📈 Results
 
-Survived (0 = No, 1 = Yes)
+- **Accuracy:** ~80%
+- **Balanced Precision and Recall**
 
-🛠️ Tech Stack
+### Evaluated using:
+- **Confusion Matrix**
+- **Classification Report**
+- **Feature Importance**
 
-Python
-
-Pandas
-
-NumPy
-
-Matplotlib
-
-Scikit-Learn
-
-
-🤖 Model
-
-Random Forest Classifier
-
-Why Random Forest?
-
-Handles non-linear relationships well
-
-Robust to outliers
-
-Less sensitive to multicollinearity
-
-Provides feature importance
-
-📈 Results
-
-Accuracy: ~80%
-
-Balanced Precision and Recall
-
-Evaluated using:
-
-Confusion Matrix
-
-Classification Report
-
-
-Feature Importance
-
-Confusion Matrix Breakdown:
-
-True Negatives: 88
-
-True Positives: 55
-
-False Positives: 17
-
-False Negatives: 19
+### Confusion Matrix Breakdown:
+- **True Negatives:** 88
+- **True Positives:** 55
+- **False Positives:** 17
+- **False Negatives:** 19
 
 The model performs consistently across both survival classes.
 
-📷 Visual Results
-Confusion Matrix
+## 📷 Visual Results
+### Visualizations
+- **Confusion Matrix**
+- **Survival by Gender**
 
-Survival by Gender
-
-
-🗂️ Project Structure
+## 🗂️ Project Structure
+```markdown
 titanic-ml-project/
 │
 ├── data/
@@ -119,35 +85,35 @@ titanic-ml-project/
 ├── outputs/
 ├── requirements.txt
 └── README.md
-
+```
 This structure follows modular design principles used in real-world ML projects.
 
-🚀 How to Run
+## 🚀 How to Run
 
-Clone the repository:
-
+### Clone the repository:
+```bash
 git clone https://github.com/Aarush-Pradhan/titanic-ml-project.git
 cd titanic-ml-project
+```
 
-Install dependencies:
-
+### Install dependencies:
+```bash
 pip install -r requirements.txt
+```
 
-Run the pipeline:
-
+### Run the pipeline:
+```bash
 python main.py
-🎯 Key Learnings
+```
 
-Handling missing values strategically
+## 🎯 Key Learnings
 
-Avoiding dummy variable trap with one-hot encoding
+- **Handling missing values strategically**
+- **Avoiding dummy variable trap with one-hot encoding**
+- **Interpreting confusion matrix mathematically**
+- **Evaluating classification models properly**
+- **Building structured ML projects (not just notebooks)**
 
-Interpreting confusion matrix mathematically
+## 👨‍💻 Author
 
-Evaluating classification models properly
-
-Building structured ML projects (not just notebooks)
-
-👨‍💻 Author
-
-Aarush
+**Aarush**
